@@ -511,6 +511,10 @@
     font-size: 3rem;
 } 
 
+.branch-container {
+    display: block;
+}
+
     .whyus .whyreason h5,
     .more-services .feature-title-container  h5 {
         font-size: 2rem;
