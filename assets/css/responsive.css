@@ -138,6 +138,9 @@
         font-size: 7px!important;
     }
 
+    .page-title-box {
+    width: calc(100% - 30px); padding: 6rem 0;}
+
     .sm-center {
         text-align: center!important;
     } 
@@ -441,7 +444,7 @@
 
   /* Styles for small phones/tablets */
   .page-title-box {
-    width: calc(100% - 30px);}
+    width: calc(100% - 30px); padding: 5rem 0;}
   .about-text {
     font-size: 2.5rem;
   }
