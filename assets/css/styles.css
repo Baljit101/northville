@@ -3055,6 +3055,11 @@ background-image: url('../images/utility/focusworker.png');
 
 }
 
+.big-side-img-3 {
+background-image: url('../images/services/heatdelivery.png');
+
+}
+
 .big-side-img {
       background-size: cover;
   background-position: center;
@@ -3253,6 +3258,117 @@ display: flex;
   z-index: 1;
   animation: spin 10s linear infinite;
 }
+
+
+
+.heating-oil-box {
+    border-radius: 10px;
+    gap: 2rem;
+    border: 1px solid #eaeaea;
+    background-color: #f9f9f9;
+    padding: 3rem;
+}
+
+.fourgen-stat.heating-oil-box {
+        background: #162132;
+    border: 1px solid #ffffff14;
+}
+
+
+.oil-percent-box {
+    background: #ffffff;
+    padding: 2rem;
+    box-shadow: 0px 4px 8px -2px #00000038;
+    overflow: hidden;
+    font-weight: 800;
+    border-radius: 10px;
+    min-width: 200px;
+    position: relative;
+}
+.oil-percent-box:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    padding: 4px;
+    background: linear-gradient(135deg, #3c8de0, #48be3f);
+    border-radius: 10px;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    z-index: 0;
+    background: linear-gradient(135deg, #3c8de0, #48be3f);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.oil-percent-box h4 {
+display: block;
+    color: #46b55b;
+    background: linear-gradient(135deg, #45b45e, #3d92cf);
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+    text-align: center;
+}
+
+.oil-percent-box p span {
+        font-size: 70%;
+    line-height: 1.5;
+}
+
+.oil-percent-box p {
+display: block;
+    color: #46b55b;
+    line-height: 1;
+    margin-top: 1rem;
+    background: linear-gradient(135deg, #45b45e, #3d92cf);
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+}
+
+.fourgen-stat.heating-oil-box .oil-percent-box h4,
+.fourgen-stat.heating-oil-box .oil-percent-box p{
+color: #46b55b;
+    background: linear-gradient(135deg, #ddfaff, #41c57d);
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fourgen-stat.heating-oil-box .oil-percent-box {
+background: transparent;
+}
+.fourgen-stat.heating-oil-box .oil-percent-box:before {
+content: '';
+    position: absolute;
+    inset: 0;
+    padding: 4px;
+    background: linear-gradient(135deg, #ddfaff, #41c57d);
+    background-size: 100% 100%;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 0;
+}
+
+
+.description-box h4 {
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #294831;
+}
+
+.description-box p {
+    font-size: 1.8rem;
+    color: #000;
+}
+
 
 @keyframes spin {
   0% { transform: rotate(0deg); }
