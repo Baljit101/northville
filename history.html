@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <title>Our History | Northville Industries</title>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description" content="A century of energy leadership. Learn how Northville Industries evolved from a local supplier to a regional energy leader.">
+    <meta content="Northville" name="author">
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="assets/images/utility/whiteblur.png" rel="preload" type="image/png"><!--[if IE]><script src="assets/js/excanvas.js"></script><![endif]-->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <style>
+    .history-carousel {
+      background: transparent !important;
+    }
+    .history-carousel .owl-item {
+      display: flex;
+      background: transparent !important;
+    }
+    .history-carousel .owl-thumbs {
+      display: none;
+      background: transparent !important;
+    }
+    .history-carousel .history-item {
+      width: 1500px;
+      display: flex;
+      padding-top: 5rem;
+      align-items: center;
+      justify-content: center;
+      background: transparent !important;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      overflow: visible;
+      margin: 0 auto;
+      padding-bottom: calc(5rem + 20px);
+      padding-right: 15px;
+    }
+    .history-content-box {
+      z-index: 1;
+      color: white;
+      padding-right: 10rem;
+    }
+    .history-content-box .history-tag {
+      background: linear-gradient(-135deg, #3c8de0, #48be3f);
+      color: #ffffff;
+      padding: 5px 12px;
+      border-radius: 10px;
+      font-size: 1.5rem;
+      display: inline-block;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+    .timeline-img {
+      border-radius: 10px;
+      box-shadow: 10px 10px 28px 0px #00000082;
+    }
+    .history-content-box h2 {
+      margin: 2rem 0 30px;
+      font-weight: 900;
+      color: #ffffff;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: all 1s ease 0s;
+      background: linear-gradient(45deg, #b3d9ff, #ceffca);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradient-move 3s infinite linear;
+      font-size: 5rem;
+    }
+    .history-content-box p {
+      font-size: 2rem;
+      color: #ffffff;
+    }
+    .history-carousel .owl-nav {
+      position: absolute;
+      top: 5rem;
+      width: 1470px;
+      display: flex;
+      z-index: 10;
+      gap: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .history-carousel .owl-nav button {
+      background: rgb(60 141 224) !important;
+      color: white !important;
+      border: none !important;
+      font-size: 2rem !important;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    .history-timeline-nav {
+      text-align: left;
+      z-index: 5;
+      min-width: 100%;
+      bottom: 0;
+      display: flex;
+      position: relative;
+      padding: 4rem 3rem 0 3rem;
+      gap: 3rem;
+      overflow-x: scroll;
+    }
+    .history-timeline-nav {
+      overflow: scroll;
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+    .history-timeline-nav::-webkit-scrollbar {
+      display: none;
+      /* Chrome, Safari and Opera */
+    }
+    .history-timeline-line {
+      height: 8px;
+      width: 100%;
+      z-index: 7;
+      background: linear-gradient(135deg, #45b45e, #3d92cf);
+    }
+    .history-timeline-nav .history-year {
+      display: inline-block;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+      line-height: 1;
+      color: #46b55b;
+      background: linear-gradient(135deg, #45b45e, #3d92cf);
+      background-size: 100% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 3rem;
+      font-family: 'Montserrat';
+      padding-bottom: 1rem;
+      opacity: .8;
+      transition: all .3s ease;
+      flex: 1 1 0;
+      color: #46b55b;
+      background: linear-gradient(135deg, #45b45e, #3d92cf);
+      background-size: 100% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradient-move 3s infinite linear;
+      min-width: fit-content;
+    }
+    span.history-year.active {
+      transform: translateY(-3rem);
+      opacity: 1;
+      background: linear-gradient(45deg, #70b5fa, #8bff82);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradient-move 3s infinite linear;
+    }
+    .history-timeline-nav .history-year .label {
+      display: block;
+      margin: 1rem 0;
+      font-size: 2rem;
+      line-height: 1.5;
+      font-family: 'Open Sans';
+    }
+    .history-timeline-nav .history-year::after {
+      content: '';
+      width: 4px;
+      height: 4rem;
+      background: linear-gradient(135deg, #45b45e, #3d92cf);
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 100px;
+      transition: all .3s ease;
+    }
+    .history-timeline-nav .history-year.active::before {
+      background: #fff;
+      border-color: #fff;
+    }
+    .history-timeline-nav .history-year::after {
+      content: '';
+      width: 4px;
+      height: 4rem;
+      background: linear-gradient(135deg, #45b45e, #3d92cf);
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 100px;
+    }
+    .history-year.active::after {
+      height: 7rem;
+    }
+    .gradient-border {
+      position: relative;
+      padding: 20px;
+    }
+    .gradient-border:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      z-index: -1;
+      background: linear-gradient(135deg, #3c8de0, #48be3f);
+      border-radius: 10px;
+      box-shadow: 10px 10px 28px 0px #00000082;
+    }
+    .history-timeline-nav-box {
+      position: relative;
+    }
+    .history-timeline-nav-box:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      z-index: 6;
+      background: #071322;
+      background: -webkit-linear-gradient(90deg, rgba(7, 19, 34, 1) 0%, rgba(255, 255, 255, 0) 100%);
+      background: -moz-linear-gradient(90deg, rgba(7, 19, 34, 1) 0%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(90deg, rgba(7, 19, 34, 1) 0%, rgba(255, 255, 255, 0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#071322", endColorstr="#FFFFFF", GradientType=1);
+      width: 40px;
+    }
+    .history-timeline-nav-box:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      z-index: 6;
+      background: #071322;
+      background: -webkit-linear-gradient(270deg, rgba(7, 19, 34, 1) 0%, rgba(255, 255, 255, 0) 100%);
+      background: -moz-linear-gradient(270deg, rgba(7, 19, 34, 1) 0%, rgba(255, 255, 255, 0) 100%);
+      background: linear-gradient(270deg, rgba(7, 19, 34, 1) 0%, rgba(255, 255, 255, 0) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#071322", endColorstr="#FFFFFF", GradientType=0);
+      width: 100px;
+    }
+    @media (max-width: 1500px) {
+      .history-carousel .owl-nav {
+        left: 15px;
+        width: 100%;
+        transform: none;
+      }
+      .history-content-box h2 {
+        font-size: 4rem;
+      }
+      .history-content-box p {
+        font-size: 1.8rem;
+      }
+      .history-content-box h2 {
+        margin: 0rem 0 15px;
+      }
+      .history-content-box {
+        padding-right: 5rem;
+      }
+      .history-content-box .history-tag {
+        font-size: 1.25rem;
+      }
+      .history-box.align-items-center {
+        align-items: center!important;
+      }
+      .history-carousel .owl-nav button {
+        width: 40px;
+        height: 40px;
+      }
+      .history-timeline-nav .history-year {
+        font-size: 4.5rem
+      }
+      .history-timeline-nav .history-year .label {
+        font-size: 1.9rem;
+      }
+    }
+    @media (max-width: 1250px) {
+      .history-timeline-nav .history-year {
+        font-size: 4rem
+      }
+      .history-timeline-nav .history-year .label {
+        font-size: 1.8rem;
+      }
+    }
+    @media (max-width: 992px) {
+      .history-content-box {
+        padding: calc(40px + 1rem) 0px 3rem;
+        text-align: center;
+      }
+      .history-carousel .owl-nav {
+        left: 0;
+        width: 100%;
+        transform: none;
+        text-align: center;
+        justify-content: center;
+      }
+      .history-carousel .history-item {
+        padding-right: 0;
+      }
+      .history-carousel .owl-nav {
+        top: 3rem;
+      }
+      .history-content-box h2 {
+        font-size: 3.8rem;
+      }
+      .history-content-box p {
+        font-size: 1.7rem;
+      }
+      .history-content-box h2 {
+        margin: 0rem 0 15px;
+      }
+      .history-content-box .history-tag {
+        font-size: 1.25rem;
+      }
+    }   
+  </style>
+  <body class="history-page">
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div><!-- Page Wrapper -->
+    <div class="page-wrapper" id="page-wrapper">
+              <button class="backtotop" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button> <!-- Navigation Bar -->
+        <nav class="main-nav navbar-expand-xl transparent d-flex" id="main-nav">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div><!-- Logo Container -->
+            <div class="logo-container align-self-center mr-auto">
+                <a href="index.html"><img alt="image" class="logo color" src="assets/images/utility/logo-color.png"></a>
+            </div><!-- menu links -->
+            <!-- menu links -->
+            <div class="menu-container align-self-center">
+                <!-- Menu -->
+                <ul class="menu" id="menu">
+                    <!-- Menu Item -->
+                    <li class="menu-item">
+                        <a>What We Offer<i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="gasoline.html">Gasoline</a>
+                            </li>
+                            <li>
+                                <a href="flex-fuel.html">Flex Fuel (E85)</a>
+                            </li>
+                            <li>
+                                <a href="heating-oil.html">Heating Oil</a>
+                            </li>
+                            <li>
+                                <a href="bioheat.html">Bioheat® Fuel</a>
+                            </li>
+                            <li>
+                                <a href="diesel.html">Northville Diesel</a>
+                            </li>
+                        </ul>
+                    </li><!-- Menu Item -->
+                    <li class="menu-item">
+                        <a>Who We Are<i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="history.html">Our History</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </li><!-- Menu Item -->
+                    <li class="menu-item">
+                        <a>Operations<i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="locations.html">Locations/Terminals</a>
+                            </li>
+                            <li>
+                                <a href="ptp.html">Petroterminal de Panamá</a>
+                            </li>
+                            <li>
+                                <a href="pipeline-awareness.html">Pipeline Public Awareness</a>
+                            </li>
+                            <li>
+                                <a href="pipeline-integrity.html">Pipeline Integrity</a>
+                            </li>
+                        </ul>
+                    </li><!-- Menu Item -->
+                    <li class="menu-item">
+                        <a href="sustainability.html">Sustainability</a>
+                    </li>
+                    <li class="menu-item menu-item-box portal-btn">
+                        <a class="shadow button gradient-outline-btn transparent" href="https://secure.northville.com/(S(2ewovl45tcbg5v55c4ljdsrp))/LoginForm.aspx" target="_blank" rel="noopener noreferrer">Customer Portal</a>
+                    </li>
+                    <li class="menu-item menu-item-box contact-btn">
+                        <a class="shadow button button-md button-primary" href="contact.html">Become a Customer</a>
+                    </li>
+                </ul><!-- //menu -->
+            </div><!-- //menu links -->
+            <!-- //menu links -->
+            <!-- Open Menu Button -->
+            <div class="menu-toggle" onclick="return false;">
+                <em></em> <em></em> <em></em>
+            </div><!-- // open menu button -->
+            <div class="menu_open_overlay"></div>
+        </nav><!--// Navigation Bar -->
+
+      <!-- Section -->
+      <section class="page-section pt100" data-bleed="100" data-image-src="assets/images/bg-imgs/abstract-1.png" data-parallax="scroll" data-speed=".3">
+        <div class="history-timeline-nav-box">
+          <div class="history-timeline-nav">
+            <span class="history-year active" data-slide="0">1917<span class="label">Origins and Evolution</span></span> <span class="history-year" data-slide="1">1950's<span class="label">Shift to Petroleum</span></span> <span class="history-year" data-slide="2">1970's<span class="label">Expansion to Panama</span></span> <span class="history-year" data-slide="3">2000's<span class="label">Leading Forward</span></span> <span class="history-year" data-slide="4">Present<span class="label">Community Involvement</span></span> <span class="history-year" data-slide="5">Future<span class="label">Leading with Purpose</span></span>
+          </div>
+        </div>
+        <div class="history-timeline-line"></div>
+        <div class="container-fluid p0 relative">
+          <div class="owl-carousel owl-theme history-carousel">
+            <div class="history-item">
+              <div class="container-fluid">
+                <div class="row z10 align-items-center d-flex history-box">
+                  <div class="col-lg-5 offset-lg-0 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12">
+                    <div class="history-content-box">
+                      <div class="history-tag">
+                        1917 • Founding
+                      </div>
+                      <h2>
+                        Origins and Evolution
+                      </h2>
+                      <p>
+                        Samuel Bernstein launches Northville with a horse-drawn carriage delivering coal and ice in NYC—laying the foundation for a century of energy leadership.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-7 offset-lg-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-xs-12 gradient-border">
+                    <img class="timeline-img" src="assets/images/gallery/history-1.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history-item">
+              <div class="container-fluid">
+                <div class="row z10 align-items-center d-flex history-box">
+                  <div class="col-lg-5 offset-lg-0 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12">
+                    <div class="history-content-box">
+                      <div class="history-tag">
+                        1950s • Expansion
+                      </div>
+                      <h2>
+                        Shift to Petroleum
+                      </h2>
+                      <p>
+                        Led by Harold Bernstein, Northville enters the petroleum industry, building major terminals and pipelines across Long Island to fuel rapid regional growth.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-7 offset-lg-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-xs-12 gradient-border">
+                    <img class="timeline-img" src="assets/images/gallery/history-2.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history-item">
+              <div class="container-fluid">
+                <div class="row z10 align-items-center d-flex history-box">
+                  <div class="col-lg-5 offset-lg-0 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12">
+                    <div class="history-content-box">
+                      <div class="history-tag">
+                        1979 • Panama
+                      </div>
+                      <h2>
+                        Expansion to Panama
+                      </h2>
+                      <p>
+                        Northville partners with Panama to create Petroterminal de Panama and builds vital transshipment and pipeline infrastructure connecting the Pacific and Atlantic.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-7 offset-lg-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-xs-12 gradient-border">
+                    <img class="timeline-img" src="assets/images/gallery/history-3.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history-item">
+              <div class="container-fluid">
+                <div class="row z10 align-items-center d-flex history-box">
+                  <div class="col-lg-5 offset-lg-0 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12">
+                    <div class="history-content-box">
+                      <div class="history-tag">
+                        2000s • Growth
+                      </div>
+                      <h2>
+                        Leading Forward
+                      </h2>
+                      <p>
+                        Under Jay and Gene Bernstein, Northville advances into trading, becomes a major player on NYMEX/CME, and integrates sustainability into its strategy.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-7 offset-lg-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-xs-12 gradient-border">
+                    <img class="timeline-img" src="assets/images/gallery/history-4.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history-item">
+              <div class="container-fluid">
+                <div class="row z10 align-items-center d-flex history-box">
+                  <div class="col-lg-5 offset-lg-0 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12">
+                    <div class="history-content-box">
+                      <div class="history-tag">
+                        Present • Local Impact
+                      </div>
+                      <h2>
+                        Community Involvement
+                      </h2>
+                      <p>
+                        Northville supports Long Island through charity events like the Long Island Classic and partnerships with groups like United Way, earning broad recognition.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-7 offset-lg-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-xs-12 gradient-border">
+                    <img class="timeline-img" src="assets/images/gallery/history-5.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history-item">
+              <div class="container-fluid">
+                <div class="row z10 align-items-center d-flex history-box">
+                  <div class="col-lg-5 offset-lg-0 col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12">
+                    <div class="history-content-box">
+                      <div class="history-tag">
+                        Future • Vision
+                      </div>
+                      <h2>
+                        Leading with Purpose
+                      </h2>
+                      <p>
+                        Northville continues to lead with integrity, focusing on innovation, service, and sustainable energy to shape the future of the petroleum industry.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-7 offset-lg-0 col-md-10 offset-md-1 col-sm-10 offset-sm-1 col-xs-12 gradient-border">
+                    <img class="timeline-img" src="assets/images/gallery/history-6.jpg">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!-- End Section -->
+              <section class="bg-dark pt60 pb60 more-services">
+            <div class="container container-m">
+                <div class="row">
+                    <h5 class="other-services">
+                        Explore Northville
+                    </h5>
+                    <div class=" other-services-row row relative z10 wow animate__animated animate__fadeInUp">
+                        <!-- Service Item -->
+                        <div class="service-item sustainability-box mb30 col-lg-3 col-md-6 col-sm-6 col-xs-10 offset-xs-1">
+                            <div class="features-item sm-center">
+                                <div>
+                                    <img alt="image" class="w100" src="assets/images/gallery/explore-sustainability.jpg">
+                                </div>
+                                <div class="feature-title-container">
+                                    <a href="sustainability.html">
+                                    <h5 class="features-title">
+                                        Sustainability
+                                    </h5><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Service Item -->
+                        <!-- Service Item -->
+                        <div class="service-item ptp-service-box mb30 col-lg-3 col-md-6 col-sm-6 col-xs-10 offset-xs-1">
+                            <div class="features-item sm-center">
+                                <div>
+                                    <img alt="image" class="w100" src="assets/images/gallery/explore-ptp.jpg">
+                                </div>
+                                <div class="feature-title-container">
+                                    <a href="ptp.html">
+                                    <h5 class="features-title">
+                                        PTP
+                                    </h5><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Service Item -->
+                        <!-- Service Item -->
+                        <div class="service-item our-history-box mb30 col-lg-3 col-md-6 col-sm-6 col-xs-10 offset-xs-1">
+                            <div class="features-item sm-center">
+                                <div>
+                                    <img alt="image" class="w100" src="assets/images/gallery/explore-history.jpg">
+                                </div>
+                                <div class="feature-title-container">
+                                    <a href="history.html">
+                                    <h5 class="features-title">
+                                        Our History
+                                    </h5><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Service Item -->
+                        <!-- Service Item -->
+                        <div class="service-item location-box mb30 col-lg-3 col-md-6 col-sm-6 col-xs-10 offset-xs-1">
+                            <div class="features-item sm-center">
+                                <div>
+                                    <img alt="image" class="w100" src="assets/images/gallery/explore-locations.jpg">
+                                </div>
+                                <div class="feature-title-container">
+                                    <a href="locations.html">
+                                    <h5 class="features-title">
+                                        Our Locations
+                                    </h5><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Service Item -->
+                        <!-- Service Item -->
+                        <div class="service-item about-box mb30 col-lg-3 col-md-6 col-sm-6 col-xs-10 offset-xs-1">
+                            <div class="features-item sm-center">
+                                <div>
+                                    <img alt="image" class="w100" src="assets/images/gallery/explore-about.jpg">
+                                </div>
+                                <div class="feature-title-container">
+                                    <a href="about.html">
+                                    <h5 class="features-title">
+                                        About Us
+                                    </h5><i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div><!-- End Service Item -->
+                    </div>
+                </div>
+            </div>
+        </section>
+      <footer class="footer bg-dark text-light pt100 pb40">
+        <div class="container container-m">
+            <div class="row">
+                <!-- Logo -->
+                <div class="col-md-4 sm-text-left">
+                    <img alt="Northville Industries Logo" class="logo mb20" src="assets/images/utility/logo-color.png">
+                    <div class="contact-box p0 pb30">
+                        <p class="mb20">225 Broadhollow Road<br>
+                        P.O. Box 2937 Melville,<br>
+                        New York 11747-0398</p>
+                        <p class="footer-phone desktop-only"><i class="fa fa-phone mr-2"></i> (631) 293-4700</p><a class="footer-phone mobile-only" href="tel:+16312934700"><i class="fa fa-phone mr-2"></i> (631) 293-4700</a>
+                    </div><a class="social-button mb30" href="https://www.linkedin.com/company/northvilleindustriesinc" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> Connect</a>
+                </div><!-- Footer Links -->
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 mb30 footer-group mb30">
+                            <h5 class="text-uppercase mb40">Who We Are</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="history.html">Our History</a>
+                                </li>
+                                <li>
+                                    <a href="locations.html">Locations</a>
+                                </li>
+                                <li>
+                                    <a href="sustainability.html">Sustainability</a>
+                                </li>
+                                <li>
+                                    <a href="ptp.html">Petroterminal de Panamá</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-4 mb30 footer-group mb30">
+                            <h5 class="text-uppercase mb40">What We Do</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="heating-oil.html">Heating Oil</a>
+                                </li>
+                                <li>
+                                    <a href="flex-fuel.html">Flex Fuel (E85)</a>
+                                </li>
+                                <li>
+                                    <a href="diesel.html">Diesel Fuel</a>
+                                </li>
+                                <li>
+                                    <a href="gasoline.html">Gasoline</a>
+                                </li>
+                                <li>
+                                    <a href="bioheat.html">Bioheat® Fuel</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-4 mb30 footer-group mb30">
+                            <h5 class="text-uppercase mb40">Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="pipeline-awareness.html">Pipeline Public Awareness</a>
+                                </li>
+                                <li>
+                                    <a href="pipeline-integrity.html">Pipeline Integrity</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="https://secure.northville.com/(S(skzhvd3c2uolcyn33xwe0j55))/LoginForm.aspx" target="_blank" rel="noopener noreferrer">Customer Portal</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Divider -->
+            <hr class="footer-border mt70 mb40">
+            <!-- Lower Footer -->
+            <div class="row align-items-center">
+                <div class="col-md-6 text-md-left text-center mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 Northville Industries. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-right text-center small-links">
+                    <a class="" href="privacy.html">Privacy Policy</a>
+                    <div class="small-links-dot"></div><a class="" href="terms.html">Terms & Conditions</a>
+                    <div class="small-links-dot"></div><a class="" href="site-map.html">Site Map</a>
+                </div>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <!-- // Page Wrapper -->
+    <!-- Plugins -->
+    <script>
+       window.addEventListener("load", function () {
+           const preloader = document.getElementById("preloader");
+           preloader.classList.add("hidden");
+       });
+
+       function scrollToTop() {
+           window.scrollTo({
+               top: 0,
+               behavior: 'smooth'
+           });
+       }
+    </script> 
+    <script src="assets/js/jquery-3.0.0.min.js">
+    </script> 
+    <script src="assets/js/bootstrap.bundle.min.js">
+    </script> 
+    <script src="assets/js/smooth-scroll.min.js">
+    </script> 
+    <script src="assets/js/wow.min.js">
+    </script> 
+    <script src="assets/js/parallax.min.js">
+    </script> 
+    <script src="assets/js/paroller.min.js">
+    </script>  
+    <script src="assets/js/smoothscroll.min.js">
+    </script> 
+    <script src="assets/js/owl.carousel.min.js">
+    </script> 
+    <script src="assets/js/owl.carousel2.thumbs.min.js">
+    </script> 
+    <script src="assets/js/all.js">
+    </script>
+    </div>
+
+   <script>
+    const owl = $('.history-carousel');
+    let currentSlideIndex = 0;
+
+    owl.owlCarousel({
+  items: 1,
+  loop: false, // ❌ turn off loop
+  nav: true,
+  navText: ['‹','›'],
+  dots: false,
+  animateOut: 'fadeOut',
+  autoplay: false,
+  smartSpeed: 500,
+  startPosition: 0 //
+    });
+
+    const navItems = document.querySelectorAll('.history-timeline-nav .history-year');
+
+    navItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        const targetIndex = parseInt(item.getAttribute('data-slide'), 10);
+        const realIndex = owl.find('.owl-item:not(.cloned)').eq(targetIndex).index();
+        currentSlideIndex = targetIndex;
+        owl.trigger('to.owl.carousel', [realIndex, 500]);
+        document.querySelector('.history-year.active')?.classList.remove('active');
+        item.classList.add('active');
+      });
+    });
+
+    owl.on('changed.owl.carousel', function(e) {
+      const realCount = owl.find('.owl-item:not(.cloned)').length;
+      const index = e.item.index - owl.find('.owl-item.cloned').length / 2;
+      const normalized = (index + realCount) % realCount;
+      currentSlideIndex = normalized;
+      document.querySelector('.history-year.active')?.classList.remove('active');
+      if (navItems[normalized]) navItems[normalized].classList.add('active');
+    });
+  </script>
+  </body>
+</html>

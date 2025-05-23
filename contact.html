@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <title>Contact Us | Northville Industries</title>
+        <meta charset="utf-8">
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta name="description" content="Get in touch with Northville Industries for fuel solutions, service inquiries, or partnership opportunities.">
+        <meta content="Northville" name="author">
+        <link href="favicon.ico" rel="shortcut icon">
+        <link href="assets/css/styles.css" rel="stylesheet">
+        <link href="assets/css/responsive.css" rel="stylesheet"><!--[if IE]><script src="assets/js/excanvas.js"></script><![endif]-->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <style>
+        .contact-form-wrapper {
+            background: #f9f9f9;
+            padding: 4rem;
+            border-radius: 10px;
+            border: 1px solid #eaeaea;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+        .form-group {}
+        label {
+            font-weight: 600;
+            margin-bottom: 6px;
+            font-size: 1.5rem;
+        }
+        p.icon-line {
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #3c8de0 !important;
+            font-weight: 500;
+        }
+        p.icon-line i {
+            color: #ffffff;
+            display: inline-block;
+            height: 4rem;
+            font-size: 1.6rem;
+            width: 4rem;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            border: 2px solid;
+            border-radius: 50%;
+            background: #3c8de0;
+        }
+        .contact-box h3 {
+            color: #294831;
+            font-weight: 700;
+        }
+        .contact-box h4 {
+            color: #294831;
+            font-weight: 700;
+            font-size: 2.25rem;
+        }
+        .contact-form input, .contact-form textarea {
+            font-size: 2rem;
+            background: #fff;
+            border-radius: 10px;
+            padding: 1.5rem;
+            color: #000;
+        }
+        .phone-row {
+            display: flex;
+            gap: 10px;
+        }
+        .phone-row input {
+            flex: 1;
+        }
+        .checkbox-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+        }
+        button {
+            padding: 14px;
+            border: none;
+            border-radius: 50px;
+            background-color: #222;
+            color: #fff;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #000;
+        }
+        .thank-you {
+            text-align: center;
+            font-size: 1.2rem;
+            color: green;
+        }
+        p.success {
+            color: #004304;
+            background: linear-gradient(135deg, #a5cbe93d, #4dc3461c);
+            border: 3px solid;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            font-weight: 700;
+            border-radius: 10px;
+            box-shadow: 3px 3px;
+        }
+        .form-group {
+            margin-bottom: 3rem;
+        }
+        .contact-box:last-child {
+            border-bottom: none;
+            padding-bottom: 0px;
+        }
+        @media (max-width: 600px) {
+            .form-row, .phone-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <body>
+        <div class="page-wrapper" id="page-wrapper">
+                    <button class="backtotop" onclick="scrollToTop()"><i class="fas fa-arrow-up"></i></button> <!-- Navigation Bar -->
+        <nav class="main-nav navbar-expand-xl transparent d-flex" id="main-nav">
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div><!-- Logo Container -->
+            <div class="logo-container align-self-center mr-auto">
+                <a href="index.html"><img alt="image" class="logo color" src="assets/images/utility/logo-color.png"></a>
+            </div><!-- menu links -->
+            <!-- menu links -->
+            <div class="menu-container align-self-center">
+                <!-- Menu -->
+                <ul class="menu" id="menu">
+                    <!-- Menu Item -->
+                    <li class="menu-item">
+                        <a>What We Offer<i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="gasoline.html">Gasoline</a>
+                            </li>
+                            <li>
+                                <a href="flex-fuel.html">Flex Fuel (E85)</a>
+                            </li>
+                            <li>
+                                <a href="heating-oil.html">Heating Oil</a>
+                            </li>
+                            <li>
+                                <a href="bioheat.html">Bioheat® Fuel</a>
+                            </li>
+                            <li>
+                                <a href="diesel.html">Northville Diesel</a>
+                            </li>
+                        </ul>
+                    </li><!-- Menu Item -->
+                    <li class="menu-item">
+                        <a>Who We Are<i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="history.html">Our History</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </li><!-- Menu Item -->
+                    <li class="menu-item">
+                        <a>Operations<i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown">
+                            <li>
+                                <a href="locations.html">Locations/Terminals</a>
+                            </li>
+                            <li>
+                                <a href="ptp.html">Petroterminal de Panamá</a>
+                            </li>
+                            <li>
+                                <a href="pipeline-awareness.html">Pipeline Public Awareness</a>
+                            </li>
+                            <li>
+                                <a href="pipeline-integrity.html">Pipeline Integrity</a>
+                            </li>
+                        </ul>
+                    </li><!-- Menu Item -->
+                    <li class="menu-item">
+                        <a href="sustainability.html">Sustainability</a>
+                    </li>
+                    <li class="menu-item menu-item-box portal-btn">
+                        <a class="shadow button gradient-outline-btn transparent" href="https://secure.northville.com/(S(2ewovl45tcbg5v55c4ljdsrp))/LoginForm.aspx" target="_blank" rel="noopener noreferrer">Customer Portal</a>
+                    </li>
+                    <li class="menu-item menu-item-box contact-btn">
+                        <a class="shadow button button-md button-primary" href="contact.html">Become a Customer</a>
+                    </li>
+                </ul><!-- //menu -->
+            </div><!-- //menu links -->
+            <!-- //menu links -->
+            <!-- Open Menu Button -->
+            <div class="menu-toggle" onclick="return false;">
+                <em></em> <em></em> <em></em>
+            </div><!-- // open menu button -->
+            <div class="menu_open_overlay"></div>
+        </nav><!--// Navigation Bar -->
+
+            <section class="page-section page-title-section dark-overlay-1" data-bleed="100" data-image-src="assets/images/bg-imgs/bg-img-8.png" data-parallax="scroll" data-speed=".3">
+                <div class="container container-m">
+                    <div class="row d-flex flex-center whitecurve">
+                        <div class="page-title-box">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb bg-transparent">
+                                    <li class="breadcrumb-item">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a href="">Who We Are</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a class="active" href="contact.html">Contact Us</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                            <h1 class="service-page-title">
+                                Contact Us
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-section bg-white pt100 pb100">
+                <div class="container container-m p0">
+                    <div class="row w100 m0 relative">
+                        <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-sm-12 offset-sm-0">
+                            <h2 class="text-left section-title mb10">
+                                <span class="m0 mb20">Contact & Inquiries</span> Let’s Connect
+                            </h2>
+                            <p class="subheading mb60 text-left">
+                                Send us a message and our team will get back to you, whether it’s support or onboarding.
+                            </p>
+                            <div class="row p0 m0">
+                                <div class="contact-box col-sm-6 col-xs-6 mb30 p0">
+                                    <h4 class="mb10">
+                                        NIC Holding Corp.
+                                    </h4>
+                                    <p class="mb20 color-black">
+                                        225 Broadhollow Road<br>
+                                        P.O. Box 2937 Melville,<br>
+                                        New York 11747-0398
+                                    </p>
+                                    <p class="icon-line">
+                                        <i class="fa fa-phone"></i>(631) 293-4700
+                                    </p>
+                                </div>
+                                <div class="contact-box col-sm-6 col-xs-6 mb30 p0">
+                                    <h4 class="mb10">
+                                        Marketing Director
+                                    </h4>
+                                    <p class="mb20 color-black">
+                                        Tom Magno<br>
+                                        <u>tommag@northville.com</u>
+                                    </p>
+                                    <p class="icon-line">
+                                        <i class="fa fa-phone"></i>(631) 753-4321
+                                    </p>
+                                </div>
+                                <div class="contact-box col-sm-6 col-xs-6 mb30 p0">
+                                    <h4 class="mb10">
+                                        Credit
+                                    </h4>
+                                    <p class="mb20 color-black">
+                                        Richard Massa<br>
+                                        <u>richardm@northville.com</u>
+                                    </p>
+                                    <p class="icon-line">
+                                        <i class="fa fa-phone"></i>(631) 753- 4265
+                                    </p>
+                                </div>
+                                <div class="contact-box col-sm-6 col-xs-6 mb30 p0 mb60">
+                                    <h4 class="mb10">
+                                        Sales Administrator
+                                    </h4>
+                                    <p class="mb20 color-black">
+                                        Pattyann Mann<br>
+                                        <u>pattym@northville.com</u>
+                                    </p>
+                                    <p class="icon-line">
+                                        <i class="fa fa-phone"></i>(631) 753-4227
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 offset-lg-0 col-md-8 offset-md-2 col-sm-12 offset-sm-0">
+                            <div class="contact-form-wrapper">
+                                <div class="contact-form wrapper">
+                                    <form method="post">
+                                        <input name="csrf_token" type="hidden" value=""> <input name="botcheck" type="hidden" value="">
+                                        <div class="row">
+                                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                <label for="first-name">First Name *</label> <input id="first-name" name="first-name" required="" type="text">
+                                            </div>
+                                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                <label for="last-name">Last Name *</label> <input id="last-name" name="last-name" required="" type="text">
+                                            </div>
+                                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                <label for="email">Email Address *</label> <input id="email" name="email" required="" type="email">
+                                            </div>
+                                            <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                                <label for="phone">Phone Number *</label> <input id="phone" name="phone" required="" type="text">
+                                            </div>
+                                            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <label for="company">Company Name *</label> <input id="company" name="company" required="" type="text">
+                                            </div>
+                                            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                                <label for="message">Message *</label> 
+                                                <textarea id="message" name="message" required="" rows="4"></textarea>
+                                            </div>
+                                            <div class="form-group col-lg-12 col-md-12 col-sm-12 col-xs-12 m0">
+                                                <button class="shadow button button-lg button-primary w100" type="submit">Send Message</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer bg-dark text-light pt100 pb40">
+        <div class="container container-m">
+            <div class="row">
+                <!-- Logo -->
+                <div class="col-md-4 sm-text-left">
+                    <img alt="Northville Industries Logo" class="logo mb20" src="assets/images/utility/logo-color.png">
+                    <div class="contact-box p0 pb30">
+                        <p class="mb20">225 Broadhollow Road<br>
+                        P.O. Box 2937 Melville,<br>
+                        New York 11747-0398</p>
+                        <p class="footer-phone desktop-only"><i class="fa fa-phone mr-2"></i> (631) 293-4700</p><a class="footer-phone mobile-only" href="tel:+16312934700"><i class="fa fa-phone mr-2"></i> (631) 293-4700</a>
+                    </div><a class="social-button mb30" href="https://www.linkedin.com/company/northvilleindustriesinc" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> Connect</a>
+                </div><!-- Footer Links -->
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-4 mb30 footer-group mb30">
+                            <h5 class="text-uppercase mb40">Who We Are</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="history.html">Our History</a>
+                                </li>
+                                <li>
+                                    <a href="locations.html">Locations</a>
+                                </li>
+                                <li>
+                                    <a href="sustainability.html">Sustainability</a>
+                                </li>
+                                <li>
+                                    <a href="ptp.html">Petroterminal de Panamá</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-4 mb30 footer-group mb30">
+                            <h5 class="text-uppercase mb40">What We Do</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="heating-oil.html">Heating Oil</a>
+                                </li>
+                                <li>
+                                    <a href="flex-fuel.html">Flex Fuel (E85)</a>
+                                </li>
+                                <li>
+                                    <a href="diesel.html">Diesel Fuel</a>
+                                </li>
+                                <li>
+                                    <a href="gasoline.html">Gasoline</a>
+                                </li>
+                                <li>
+                                    <a href="bioheat.html">Bioheat® Fuel</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-4 mb30 footer-group mb30">
+                            <h5 class="text-uppercase mb40">Quick Links</h5>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <a href="pipeline-awareness.html">Pipeline Public Awareness</a>
+                                </li>
+                                <li>
+                                    <a href="pipeline-integrity.html">Pipeline Integrity</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="https://secure.northville.com/(S(skzhvd3c2uolcyn33xwe0j55))/LoginForm.aspx" target="_blank" rel="noopener noreferrer">Customer Portal</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- Divider -->
+            <hr class="footer-border mt70 mb40">
+            <!-- Lower Footer -->
+            <div class="row align-items-center">
+                <div class="col-md-6 text-md-left text-center mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 Northville Industries. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-right text-center small-links">
+                    <a class="" href="privacy.html">Privacy Policy</a>
+                    <div class="small-links-dot"></div><a class="" href="terms.html">Terms & Conditions</a>
+                    <div class="small-links-dot"></div><a class="" href="site-map.html">Site Map</a>
+                </div>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <!-- // Page Wrapper -->
+    <!-- Plugins -->
+    <script>
+       window.addEventListener("load", function () {
+           const preloader = document.getElementById("preloader");
+           preloader.classList.add("hidden");
+       });
+
+       function scrollToTop() {
+           window.scrollTo({
+               top: 0,
+               behavior: 'smooth'
+           });
+       }
+    </script> 
+    <script src="assets/js/jquery-3.0.0.min.js">
+    </script> 
+    <script src="assets/js/bootstrap.bundle.min.js">
+    </script> 
+    <script src="assets/js/smooth-scroll.min.js">
+    </script> 
+    <script src="assets/js/wow.min.js">
+    </script> 
+    <script src="assets/js/parallax.min.js">
+    </script> 
+    <script src="assets/js/paroller.min.js">
+    </script>  
+    <script src="assets/js/smoothscroll.min.js">
+    </script> 
+    <script src="assets/js/owl.carousel.min.js">
+    </script> 
+    <script src="assets/js/owl.carousel2.thumbs.min.js">
+    </script> 
+    <script src="assets/js/all.js">
+    </script>
+
+        </div>
+    </body>
+</html>
