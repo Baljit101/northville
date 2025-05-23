@@ -931,7 +931,8 @@ Page Title
     filter: blur(30px);
 }
 .page-title-section {
-    padding-top: 14rem
+    padding-top: 14rem;
+    overflow-x: hidden;
 }
 /* ---------------------------------------------
 
